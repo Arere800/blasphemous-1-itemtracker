@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Item Tracker - Blasphemous</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Blasphemous Item Tracker</h1>
+
+  <!-- Sección: reliquias -->
+  <h2>Reliquias</h2>
+  <div class="section">
+    <div class="item" data-id="sangrearena">
+      <img src="img\reliquias\Item_Blood_Perpetuated_in_Sand.webp" alt="sangrearena">
+    </div>
+    <div class="item" data-id="Mano_Incorrupta">
+      <img src="img\reliquias\Item_Incorrupt_Hand_of_the_Fraternal_Master.webp" alt="Mano_Incorrupta">
+    </div>
+    <div class="item" data-id="hilooro">
+      <img src="img/reliquias/Item_Linen_of_Golden_Thread.webp" alt="hilooro">
+    </div>
+    <div class="item" data-id="uña">
+      <img src="img/reliquias/Item_uña_arrancada_del_barro.webp" alt="uña">
+    </div>
+    <div class="item" data-id="sudario">
+      <img src="img/reliquias/Item_Shroud_of_Dreamt_Sins.webp" alt="sudario">
+    </div>
+    <div class="item" data-id="pulmon">
+      <img src="img/reliquias/Item_Silvered_Lung_of_Dolphos.webp" alt="pulmon">
+    </div>
+    <div class="item" data-id="tres">
+      <img src="img/reliquias/Item_Three_Gnarled_Tongues.webp" alt="tres">
+    </div>
+  </div>
+
+  <!-- Sección: niveles mea culpa -->
+  <h2>Mea Culpa</h2>
+  <div class="menu-item">
+    <div class="menu-header" data-toggle="mea_culpa_submenu">
+      <img src="img/mea_culpa.png" alt="Mea Culpa">
+      <span>Mostrar habilidades</span>
+    </div>
+    <div class="submenu" id="mea_culpa_submenu">
+      <div class="item" data-id="habilidad1">
+        <img src="img/habilidad1.png" alt="Habilidad 1">
+      </div>
+      <div class="item" data-id="habilidad2">
+        <img src="img/habilidad2.png" alt="Habilidad 2">
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección: Fragmentos con contador -->
+  <h2>Fragmentos de Salud</h2>
+  <div class="section">
+    <div class="counter-item" data-id="fragmentos_salud">
+      <img src="img/fragmento_salud.png" alt="Fragmento de Salud">
+      <div class="counter-controls">
+        <button class="minus">-</button>
+        <span class="count">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

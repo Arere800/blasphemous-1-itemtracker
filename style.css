@@ -1,0 +1,115 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+  color: gold;
+}
+
+.section, .submenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.item {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #555;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.item.active {
+  border-color: gold;
+  background-color: #333;
+  box-shadow: 0 0 10px gold;
+}
+
+.menu-item {
+  margin-bottom: 20px;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: 2px solid #555;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #222;
+  justify-content: center;
+}
+
+.menu-header img {
+  width: 40px;
+  height: 40px;
+}
+
+.submenu {
+  display: none;
+}
+
+.submenu.active {
+  display: flex;
+}
+
+.counter-item {
+  display: inline-block;
+  text-align: center;
+  background-color: #222;
+  border: 2px solid #555;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.counter-item img {
+  width: 64px;
+  height: 64px;
+}
+
+.counter-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.counter-controls button {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.counter-controls .count {
+  font-size: 18px;
+  width: 20px;
+  display: inline-block;
+}
